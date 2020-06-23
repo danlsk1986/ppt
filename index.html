@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Piedra, papel o tijera</h1>
+    <main class="container">
+            <div class="marcador">
+                <p>YOU: <span id="your_score"></span></p>
+                <p>CPU: <span id="cpu_score"></span></p>
+            </div>
+        <div class="main">
+            <div class="you">
+                
+                <img width="200px" height="288px" src="img/izq.png" alt="" id="your_choice">
+
+                <div class="elegi" id="elegi">
+                    <input type="radio" id="piedra" name="ppt" value="piedra">
+                    <label for="piedra">Piedra</label><br>
+                    <input type="radio" id="papel" name="ppt" value="papel">
+                    <label for="papel">Papel</label><br>
+                    <input type="radio" id="tijera" name="ppt" value="tijera">
+                    <label for="tijera">Tijera</label>
+                </div>
+                
+                
+            </div>
+
+            <span class="vs">VS</span>
+    
+            <div class="cpu">
+                
+                <img width="200px" height="288px" src="img/der.png" alt="" id="cpu_choice">
+
+                <div class="elegi">
+                    <input type="radio" name="pptCpu" value="piedra" id="rock">
+                    <label for="piedra">Piedra</label><br>
+                    <input type="radio" name="pptCpu" value="papel" id="paper">
+                    <label for="papel">Papel</label><br>
+                    <input type="radio" name="pptCpu" value="tijera" id="scissor">
+                    <label for="tijera">Tijera</label>
+                </div>
+            </div>
+
+        </div>
+        
+        <h1 class="result" id="result"></h1>
+        
+
+       
+             
+      
+    </main>
+
+    
+
+
+<script type="text/javascript" src="js/app.js"></script>
+
+</body>
+</html>
